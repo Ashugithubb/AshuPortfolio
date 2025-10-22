@@ -24,6 +24,7 @@ const handleSubmit = (e: React.FormEvent) => {
   emailjs.send(
   import.meta.env.VITE_SERVICE_ID,
   import.meta.env.VITE_TEMPLATE_ID,
+  
     {
       from_name: formData.name,
       from_email: formData.email,
@@ -43,7 +44,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "ashutosh.kumar@example.com", href: "mailto:ashutosh.kumar@example.com" },
+    { icon: Mail, label: "Email", value: "ashutoshkumarr1520@gmail.com", href: "mailto:ashutoshkumarr1520@gmail.com" },
     { icon: Phone, label: "Phone", value: "+91 98787 19602", href: "tel:+919878719602" },
     { icon: MapPin, label: "Location", value: "Punjab, India", href: "#" },
   ];
