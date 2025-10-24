@@ -28,7 +28,7 @@ const Projects = () => {
         "A full-stack web application for salon service booking, billing, and automated email notifications. Customers can book appointments, receive booking confirmations, and manage cancellations in real-time.",
       technologies: ["Next.js", "React", "Node.js", "Nest.js", "PostgreSQL", "TypeORM", "Nodemailer", "MUI"],
       github: "https://github.com/Ashugithubb/zenLooks",
-      demo: "https://zen-lookf.vercel.app/",
+      demo: "https://zen-looks.vercel.app/",
       highlights: [
         "Implemented secure user authentication and role-based access for customers and admins",
         "Integrated automated email system for booking confirmation and cancellation using Nodemailer",
