@@ -45,7 +45,7 @@ const Projects = () => {
         "Full-stack platform built for a coaching institute, featuring student login, personalized dashboards, test and fee management, and admin communication tools.",
       technologies: ["Next.js", "React", "Node.js", "Nest.js", "PostgreSQL", "TypeORM", "Nodemailer", "MUI"],
       github: "https://github.com/Ashugithubb/rbackend",
-      demo: "https://github.com/Ashugithubb/rbackend",
+      demo: "https://rstaronline.vercel.app",
       highlights: [
         "Developed personalized dashboards for students with real-time data",
         "Implemented test scheduling, result management, and fee tracking system",
