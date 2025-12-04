@@ -123,7 +123,7 @@ const socialLinks = [
             <Button
               size="lg"
               className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
-              onClick={() => window.open("https://drive.google.com/file/d/1RQpP8I8wIZwi-s093b3h8hVKMjujcb6j/view?usp=drivesdk", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank")}
             >
               Download My CV
             </Button>
