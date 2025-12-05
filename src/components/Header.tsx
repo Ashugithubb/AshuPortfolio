@@ -61,7 +61,7 @@ const Header = () => {
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
               onClick={() => {
                 // CV download functionality
-                window.open("https://drive.google.com/file/d/1RQpP8I8wIZwi-s093b3h8hVKMjujcb6j/view?usp=drivesdk", "_blank");
+                 window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank");
               }}
             >
               Download CV
