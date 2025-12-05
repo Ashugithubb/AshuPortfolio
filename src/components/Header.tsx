@@ -97,7 +97,7 @@ const Header = () => {
               variant="default"
               className="w-full mt-4 bg-gradient-to-r from-primary to-accent"
               onClick={() => {
-                window.open("https://drive.google.com/file/d/1RQpP8I8wIZwi-s093b3h8hVKMjujcb6j/view?usp=drivesdk", "_blank");
+                window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank");
               }}
             >
               Download CV
