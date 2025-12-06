@@ -199,6 +199,10 @@ const Projects = () => {
         <div className="flex flex-wrap justify-center gap-3">
           {[
             {
+              name: "BookSalon (Best Project) Multitenancy Architecture",
+              link: "https://booksalon.vercel.app/"
+            },
+            {
               name: "FeedBackLoop (Stack Overflow)",
             },
             { name: "NewRequirements" },
