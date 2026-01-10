@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,31 +16,37 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  
 
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-  emailjs.send(
-  import.meta.env.VITE_SERVICE_ID,
-  import.meta.env.VITE_TEMPLATE_ID,
-  
-    {
-      from_name: formData.name,
-      from_email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-    },
-     import.meta.env.VITE_PUBLIC_KEY
-  )
-  .then(() => {
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  })
-  .catch(() => {
-    toast.error("Failed to send message. Please try again later.");
-  });
-};
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+
+      {
+        from_name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      import.meta.env.VITE_PUBLIC_KEY
+    )
+      .then(() => {
+        toast.success("Message sent successfully! I'll get back to you soon.");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Please try again later.");
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
 
 
   const contactInfo = [
@@ -51,11 +57,11 @@ const handleSubmit = (e: React.FormEvent) => {
 
 
 
-const socialLinks = [
-  { icon: Github, href: "https://github.com/Ashugithubb", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/ashutosh160", label: "LinkedIn" },
-  { icon: SiLeetcode, href: "https://leetcode.com/u/ashutosh25leet/", label: "LeetCode" },
-];
+  const socialLinks = [
+    { icon: Github, href: "https://github.com/Ashugithubb", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/ashutosh160", label: "LinkedIn" },
+    { icon: SiLeetcode, href: "https://leetcode.com/u/ashutosh25leet/", label: "LeetCode" },
+  ];
 
 
   return (
@@ -123,7 +129,7 @@ const socialLinks = [
             <Button
               size="lg"
               className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
-              onClick={() => window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/166CJCiyjtsU_S1bztkmu0pxgIkGu29mm/view?usp=drivesdk", "_blank")}
             >
               Download My CV
             </Button>
@@ -200,9 +206,19 @@ const socialLinks = [
                   type="submit"
                   size="lg"
                   className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                  disabled={isLoading}
                 >
-                  <Send size={18} className="mr-2" />
-                  Send Message
+                  {isLoading ? (
+                    <>
+                      <Loader2 size={18} className="mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} className="mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>

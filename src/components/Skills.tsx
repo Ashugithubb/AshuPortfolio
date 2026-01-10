@@ -63,7 +63,7 @@ const Skills = () => {
     {
       name: "LeetCode",
       icon: SiLeetcode,
-      solved: 551,
+      solved: 556,
       level: "Advanced",
       color: "from-orange-400 to-orange-600",
       link: "https://leetcode.com/u/ashutosh25leet/",

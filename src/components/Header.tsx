@@ -61,7 +61,7 @@ const Header = () => {
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
               onClick={() => {
                 // CV download functionality
-                 window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank");
+                 window.open("https://drive.google.com/file/d/166CJCiyjtsU_S1bztkmu0pxgIkGu29mm/view?usp=drivesdk", "_blank");
               }}
             >
               Download CV
@@ -97,7 +97,7 @@ const Header = () => {
               variant="default"
               className="w-full mt-4 bg-gradient-to-r from-primary to-accent"
               onClick={() => {
-                window.open("https://drive.google.com/file/d/1GBRxlmUmJzSkMKntNGqA1MQ8h5HIBv9M/view?usp=drivesdk", "_blank");
+                window.open("https://drive.google.com/file/d/166CJCiyjtsU_S1bztkmu0pxgIkGu29mm/view?usp=drivesdk", "_blank");
               }}
             >
               Download CV

@@ -4,16 +4,52 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Experience = () => {
   const experiences = [
     {
+  title: "Full Stack Developer",
+  company: "JUTEQ Inc",
+  period: "Dec 2025 - Present",
+  description: "Designing and implementing full-stack and agentic AI systems for production environments.",
+  responsibilities: [
+    "Developed ReAct-style agents and Agentic RAG pipelines for conversational automation and intelligent decision flows.",
+    "Built scalable backend services using Node.js, NestJS, FastAPI, and integrated AI logic with Python and LLM frameworks (LangGraph, CrewAI, LangChain, ADK).",
+    "Created responsive frontend interfaces using React, Next.js, TypeScript, and Redux.",
+    "Implemented web scraping, RSS ingestion, keyword extraction, and multi-model content generation using OpenRouter and SerpAPI.",
+    "Ensured observability, safety, and graceful failover in production-grade agentic systems.",
+    "Collaborated with teams to optimize agent behavior, deployment strategy, and user experience.",
+    "Delivered Agentic Intel, an AI-powered automated newsletter system using Cloudflare R2 and LangChain workflows."
+  ],
+  techStack: [
+    "Node.js",
+    "NestJS",
+    "FastAPI",
+    "Python",
+    "LangGraph",
+    "CrewAI",
+    "LangChain",
+    "ADK",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Redux",
+    "SerpAPI",
+    "OpenRouter",
+    "Cloudflare R2",
+    "RSS"
+  ]
+},
+    {
       title: "Full Stack Developer Intern",
       company: "Zenmonk Software and Services (FUNIBER)",
-      period: "May 2025 - Present",
+      period: "May 2025 - Dec 2025",
       description: "Contributing to the development and deployment of scalable, responsive web applications using modern full-stack technologies.",
       responsibilities: [
+        "Applied SOLID principles to build scalable full-stack web applications deployed for 1,000+ students, ensuring smooth UI/UX and optimized performance.",
+        "Developed 15+ projects across frontend, backend, and database layers using React.js, Node.js, and PostgreSQL.",
         "Built and deployed responsive web applications using React.js, Next.js, Redux, and MUI.",
         "Designed and optimized RESTful APIs with Nest.js, improving scalability and reducing API response time by 30%.",
         "Integrated PostgreSQL using TypeORM for efficient relational data management.",
         "Implemented Docker-based deployment pipelines for consistent and containerized environments.",
-        "Collaborated with a 5-member Agile team using Git and GitHub for version control and code reviews."
+        "Collaborated with a 5-member Agile team using Git and GitHub for version control and code reviews.",
+        
       ],
       techStack: ["React.js", "Next.js", "Redux", "TypeScript", "Nest.js", "Node.js", "PostgreSQL", "Docker", "MUI", "HTML", "CSS"]
     },
